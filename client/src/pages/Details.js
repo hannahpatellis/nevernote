@@ -7,7 +7,10 @@ class Details extends Component {
 
     render() {
         return (
-            <h1>The details page!</h1>
+            <div className="container">
+                <div className="col-6">
+                </div>
+            </div>
         )
     }
 }
