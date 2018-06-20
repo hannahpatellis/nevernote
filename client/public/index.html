@@ -19,9 +19,24 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    
     <title>Nevernote</title>
 
+    <!-- 
+      Require the Bootstrap CSS
+
+      We only want to require Bootstrap's CSS and NOT the Bootstrap JS CDN
+      because the JS CDN is for non-React client-side JavaScript only.
+      Not to mention it requires jQuery, which we can NOT use in React.
+    -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- 
+      Require the Font Awesome CSS
+
+      Font Awesome gives us the ability to use Font Awesome's
+      large collection of icons within our app.
+    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   </head>
   <body>

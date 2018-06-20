@@ -1,3 +1,13 @@
+# Nevernote
+
+## Nevernote is a todo list application that was created in-class as a MERN review for and by students of Northwestern University's Coding Bootcamp and polished up by Hannah Patellis. The purpose was to overview the main points of building a MERN application.
+
+It was created using the `Create React Express App` boilerplate code.
+
+NU students can find this boilerplate in the class repo under `00-Resources/create-react-express.zip`. This file was the starting point for this application.
+
+---
+
 # Create React Express App
 
 ## About This Boilerplate
