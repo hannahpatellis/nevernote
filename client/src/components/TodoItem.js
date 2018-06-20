@@ -12,10 +12,10 @@ const TodoItem = props => (
         </div>
         <div className="col-10">
             <div className="row">
-                Todo
+                <h3>Todo</h3>
             </div>
             <div className="row">
-                Deadline
+                <small className="text-danger">Deadline</small>
             </div>
         </div>
         <div className="col-1">
