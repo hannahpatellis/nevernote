@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => (
     <nav className="navbar navbar-dark bg-dark">
-        <Link className="navbar-brand" to="/">Nevernote</Link>
+        {/* We need to use <Link> here because we are directing to a page within our own site and react-router-dom needs a <Link> not <a> tag */}
+        <Link className="navbar-brand" to="/"><i className="mr-2 fas fa-tags"></i> Nevernote</Link>
     </nav>
 );
 

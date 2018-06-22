@@ -93,6 +93,16 @@ app.post("/api/todo", (req, res) => {
     });
 });
 
+app.delete("/api/todo/:id", (req, res) => {
+  db.Todo
+    .remove({ _id: req.params.id })
+    .then(results => res.json(results))
+    .catch(err => {
+      console.log(err);
+      res.status(422).json(err);
+    });
+});
+
 /* This route is special and only used in production mode.
    If a route is not found above, the "*" wildcard will send
    all the request to the built React app located in /client/build/index.html.

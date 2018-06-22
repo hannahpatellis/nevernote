@@ -22,6 +22,7 @@ import List from "./pages/List";
 import Details from "./pages/Details";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 /* We're next going to make a stateless component function for the App component.
    This App component doesn't preform any logic so it doesn't need to carry a state or have
@@ -38,6 +39,10 @@ const App = () => (
      Inside that empty div are any components we want to be rendered on every page
      followed by our Route components.
 
+     <Navbar /> is on the top because we want it rendered above whatever components are
+     going to be rendered by the routes. Likewise, we want <Footer/> to be below the
+     content the routes load.
+
      Route components function kind of like if/else statements. If the path is matched
      then it will load the associated component and only the associated component.
 
@@ -51,6 +56,7 @@ const App = () => (
       <Route exact path="/" component={Welcome} />
       <Route exact path="/list" component={List} />
       <Route exact path="/todo/:id" component={Details} />
+      <Footer />
     </div>
   </Router>
 );
